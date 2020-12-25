@@ -1,0 +1,372 @@
+*,*::before, *::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+.back{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+
+}
+/* the first div that have the image */
+.header{
+    width: 93%;
+    height: 600px;
+    margin:auto;
+    margin-top: 50px; 
+    overflow: hidden;
+    /* display: flex; */
+    border-radius: 10px ; 
+    background: url(../img/blake-connally-B3l0g6HLxr8-unsplash.jpg) center;
+    background-size: cover;
+}
+/* the div over the image to give some traspancy */
+.over{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(4, 9, 30, 0.5);
+}
+/* div navbar in the top of class "over" */
+.navbar{
+    width: 100%;
+    height: 60px;
+    /* background-color:rgba(4, 9, 30, 0.5) ; */
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: wrap;   
+    padding:17px 65px;
+    justify-content: space-between;
+    /* position: relative; */
+    z-index: 1;
+}
+
+.navbar ul{
+    text-decoration: none; 
+    word-spacing: 20px;  
+}
+
+.navbar ul li{
+    padding-top: 5px;
+    list-style: none;
+    float: left;
+
+    
+} 
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    color: #fff;
+    padding: 20px;
+}
+.navbar ul li a:hover{
+    transition: 0.5s;
+    color: #8ab92d;
+
+}
+.text_head{
+    width: 100%;
+    height: 80%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    /* padding-top: 180px; */
+}
+
+.text_head h5{
+    color:#8ab92d;
+    margin: 20px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.text_head h1{
+    color: #fff;
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 1em;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.button_head{
+    height: 40px;
+    background: #8ab92d;
+    border: 1px solid transparent;
+    color: #fff;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 50px;
+
+}
+.button_head:hover{
+    background: #8ab92d00;
+    transition: 0.5s;
+    border: #fff solid 1px ;
+    cursor:pointer ;
+}
+
+
+/*//////////////// section////////////// */
+.section{
+    width: 88%;
+    height: auto;
+    /* background-color: #8ab92d; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-content: center;
+    text-align: center;
+    padding-top: 120px;
+}
+
+.section_title_text h1{
+    color: #222222;
+    font-size: 36px;
+    margin-bottom: 12px;
+   
+}
+.section_title_text p{
+    color: #777777;
+    font-size: 14px;
+    line-height: 1.625em;
+   
+}
+
+.section ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-content: center; */
+    text-decoration: none;
+    list-style: none;
+    margin-top:7% ;
+}
+
+.section ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px 30px;
+    position: relative;
+    text-transform: uppercase;
+    color: #222;
+    font-weight: 500;
+} 
+.section ul li a{
+    text-decoration: none;
+    color:#222222;
+    font-size: 15px;
+    font-weight: 500;
+} 
+.section ul li a::after{
+    content: "";
+    height: 2px;
+    display: block;
+    background: #333;
+    width: calc(0% - 60px);
+    position: absolute;
+} 
+.section ul li a:hover::after{
+    width: calc(100% - 60px);
+    transition: width 350ms ease-out;
+} 
+.active{
+    color:#8ab92d !important;
+}
+
+
+
+
+
+/* the category photo */
+
+.category{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-color: #222; */
+    margin-top:5% ;
+    
+}
+.category div{
+    width: 30%;
+    height: 70vh;
+    /* background-color: #8ab92d;   */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    margin-right:10px ;
+}
+.category div img{
+    width: 100%;
+    height: 75%;
+    /* background-color: black; */
+    border-radius: 10px;
+    cursor: pointer;
+}
+.category div img:hover{
+    box-shadow: 5px 5px 25px 0 rgba(4, 9, 30, 0.5);
+}
+.category div h4{
+    cursor: pointer;
+    font-size: 18px;
+    color: #222222;
+    margin-top: 10%;
+}
+.category div p{
+    font-size: 13px;
+    color: #777777;
+    
+}
+/*//////// the div down the category ///////// */
+.result_cat{
+    width: 100%;
+    height: 60vh;
+    border-radius: 10px;
+    margin-top:30vh ;
+    background-image: url(../img/blake-connally-B3l0g6HLxr8-unsplash.jpg)  ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.result_cat div{
+    width: 30%;
+    height: 90%;
+    background-color: #ffffff;  
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin-right:10px ;
+    margin-top: 20%;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px 0px rgba(138, 185, 45, 0.2);
+    overflow: hidden;
+}
+
+.result_cat div p{
+    width: 100%;
+    height:300px ;
+    font-size: 14px;
+    color: #777777;
+    line-height: 1.625em;
+    letter-spacing: 1.1px;  
+}
+.result_cat div h4{
+    width: 100%;
+    height:100px ;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #222222;
+}
+
+/* ////////////////////the footer///////////////// */
+
+footer{
+    width: 88%;
+    height: 400px;
+    margin: 30% 0 5% 6% ;
+    background-color: #04091e;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 100px 20px;
+}
+footer div{
+    width: 30%;
+}
+footer div h6{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 600;
+}
+footer div p{
+    color: #777777;
+    margin-bottom: 25px;
+    font-size: 14px;
+    /* font-weight: 600; */
+}
+.email{
+    display: flex;
+    width: 100%;
+
+}
+.email input {
+    border: none;
+    width: 80% ;
+    font-weight: 300;
+    background: #191919;
+    color: #777;
+    padding-left: 20px;
+    border-radius: 0;
+    font-size: 14px;
+    padding: 10px 18px;
+}
+
+.email button{
+    width:20% ;
+    height: auto;
+    border: none;
+    background-color: #8ab92d;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+/*//////////////////////////// class for js//////////////////////////// */
+/* class for navbar to use in js */
+.navbar_js {
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: wrap;   
+    justify-content: space-between;
+    height: 56px;
+    background-color:rgba(4, 9, 30, 0.8) ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-right: 8.2%;
+    padding-left: 8.2%;
+    padding-bottom:15px ;
+    padding-top: 12px;
+}
+/* to get reblace empty of navbar after scroll down ""just for the text dont move top"" */
+.reblace_nav_js{
+    width: 100%;
+    height: 60px;
+}
